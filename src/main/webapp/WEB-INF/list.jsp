@@ -12,7 +12,7 @@
     <h1>Tarefas</h1>
     <ul>
         <c:forEach var="item" items="${tarefas}">
-            <li>${item.descricao}</li>
+            <li>${item.descricao} | <a href="/tarefas/update?id=${item.id}">Editar </a> | <a href="/tarefas/delete?id=${item.id}">Editar </a></li>
         </c:forEach>
     </ul>
 </body>
